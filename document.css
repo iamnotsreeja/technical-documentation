@@ -1,0 +1,36 @@
+div.main-body {
+    display: grid;
+    grid-template-columns: minmax(500px , auto)1fr;   
+    grid-template-areas: "navbar mainContent";
+    grid-gap: 20px;
+    background-color:rgba(122, 206, 129, 0.74) ;
+}
+   
+nav#navbar {
+    grid-area: navbar;
+    position: auto;   
+}
+   
+nav#navbar a {
+    display: block;
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 40px;
+    padding: 15px;
+    margin: 5px 0;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgba(57, 117, 62, 0.804);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+   
+main#main-doc {
+    grid-area: mainContent;
+}
+   
+header {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(18, 14, 14);
+}
+   
